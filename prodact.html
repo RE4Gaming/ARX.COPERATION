@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARX Products</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f0f0f0; /* Light gray background */
+            color: #333; /* Dark gray text */
+        }
+
+        header {
+            background-color: #333; /* Dark gray header */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .product-card h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .product-card p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .product-card a {
+            display: inline-block;
+            background-color: #4CAF50; /* Green button */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card a:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ARX Products</h1>
+    </header>
+
+    <main>
+        <section id="products">
+            <div class="product-card">
+                <h2>QDesk</h2>
+                <p>Description of QDesk software.</p>
+                <a href="https://drive.google.com/drive/folders/1W9RQkSx05cRQ4FbhC2fTRiCskZHXzGj6?usp=drive_link" target="_blank">Learn More</a>
+            </div>
+            <div class="product-card">
+                <h2>Antivirus Defender</h2>
+                <p>Description of Antivirus Defender software.</p>
+                <a href="https://drive.google.com/drive/folders/1o21bTF8VCDJ6kHxhnNgcu6yOAo308A0a?usp=drive_link" target="_blank">Learn More</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 ARX Products</p>
+    </footer>
+</body>
+</html>
+<style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .products-button {
+            padding: 10px 20px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: auto;
+        }
+        .logo {
+            display: none;
+        }
+    </style>
+    <div class="header">
+        <div class="logo">ARX</div>
+        <a href="file:///D:/ARX%20website%20programs/html/website-html.html" target="_blank">
+            <button class="products-button">Home</button>
+      
+  </a>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const productsButton = document.querySelector('.products-button');
+            productsButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                window.location.href = 'file:///D:/ARX%20website%20programs/html/prodac.html';
+            });
+            if (!productsButton) {
+                console.error("productsButton not found");
+            }
+        });
+        
+    </script>
